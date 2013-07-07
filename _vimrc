@@ -73,6 +73,7 @@ let g:user_zen_settings = {
 " ctrl + e to trigger zend-coding
 let g:user_zen_expandabbr_key = '<c-o>'
 
+" javascript libraries syntax
 let g:used_javascript_libs = 'jquery,angularjs,underscore'
 
 let NERDTreeIgnore=['\~$', '\.lo$', '\.la$']
