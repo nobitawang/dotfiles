@@ -60,12 +60,6 @@ map th :tabprev<CR>
 map tl :tabnext<CR>
 map <f9> :Tlist<CR>
 
-autocmd BufReadPre *.js let b:javascript_lib_use_jquery = 1
-autocmd BufReadPre *.js let b:javascript_lib_use_underscore = 1
-autocmd BufReadPre *.js let b:javascript_lib_use_backbone = 0
-autocmd BufReadPre *.js let b:javascript_lib_use_prelude = 0
-autocmd BufReadPre *.js let b:javascript_lib_use_angularjs = 1
-
 " set 4 spaces indent for zen coding
 let g:user_zen_settings = {
 \   'indentation': '    '
@@ -81,3 +75,12 @@ let NERDTreeIgnore=['\~$', '\.lo$', '\.la$']
 map <C-h> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
   \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
   \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
+
+let g:acp_behaviorUserDefinedMeets = 'acp#meetsForKeyword'
+let g:acp_behaviorUserDefinedFunction = 'syntaxcomplete#Complete'
+
+autocmd BufReadPre *.js let b:javascript_lib_use_jquery = 1
+autocmd BufReadPre *.js let b:javascript_lib_use_underscore = 1
+autocmd BufReadPre *.js let b:javascript_lib_use_backbone = 0
+autocmd BufReadPre *.js let b:javascript_lib_use_prelude = 0
+autocmd BufReadPre *.js let b:javascript_lib_use_angularjs = 1
