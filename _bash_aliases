@@ -28,3 +28,4 @@ alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 
 alias pjson='/net/account/pixuser/kmsheng/github/pjson/pjson'
+alias composer="/Users/kmsheng/bin/composer.phar"
