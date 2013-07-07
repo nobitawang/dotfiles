@@ -11,3 +11,5 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
+
+PATH="/usr/local/bin:$PATH"
