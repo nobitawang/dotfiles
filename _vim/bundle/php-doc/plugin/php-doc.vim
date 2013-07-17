@@ -71,6 +71,7 @@ if has ("user_commands")
 let g:pdv_cfg_CommentHead = "/**"
 let g:pdv_cfg_Comment1 = " * "
 let g:pdv_cfg_Commentn = " * "
+let g:pdv_cfg_Commentn_No_Trailing = " *"
 let g:pdv_cfg_CommentTail = " */"
 let g:pdv_cfg_CommentSingle = "//"
 
@@ -276,8 +277,8 @@ func! PhpDocFunc()
     let l:txtBOL = g:pdv_cfg_BOL . l:indent
 	
     exe l:txtBOL . g:pdv_cfg_CommentHead . g:pdv_cfg_EOL
-	exe l:txtBOL . g:pdv_cfg_Comment1 . funcname . " " . g:pdv_cfg_EOL
-    exe l:txtBOL . g:pdv_cfg_Commentn . g:pdv_cfg_EOL
+	exe l:txtBOL . g:pdv_cfg_Comment1 . funcname . g:pdv_cfg_EOL
+    exe l:txtBOL . g:pdv_cfg_Commentn_No_Trailing . g:pdv_cfg_EOL
 
 	while (l:parameters != ",") && (l:parameters != "")
 		" Save 1st parameter
@@ -298,7 +299,7 @@ func! PhpDocFunc()
         if l:paramtype != ""
             let l:paramtype = " " . l:paramtype
         endif
-		exe l:txtBOL . g:pdv_cfg_Commentn . "@param" . l:paramtype . " $" . l:paramname . " " . g:pdv_cfg_EOL
+		exe l:txtBOL . g:pdv_cfg_Commentn . "@param" . l:paramtype . " $" . l:paramname . g:pdv_cfg_EOL
 	endwhile
 
 	if l:static != ""
