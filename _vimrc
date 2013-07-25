@@ -47,7 +47,7 @@ autocmd BufWinLeave * call clearmatches()
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType py set omnifunc=pythoncomplete
 autocmd FileType python syntax keyword pythonDecorator True None False self
-autocmd FileType css set omnifunc=csscomplete
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd BufNewFile,BufRead *.go set filetype=go sw=4 ts=4
 autocmd BufNewFile,BufRead *.php set keywordprg="help" omnifunc=phpcomplete#CompletePHP
 autocmd BufNewFile,BufRead *.json set ft=javascript
