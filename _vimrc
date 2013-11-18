@@ -83,3 +83,5 @@ autocmd BufReadPre *.js let b:javascript_lib_use_prelude = 0
 autocmd BufReadPre *.js let b:javascript_lib_use_angularjs = 1
 
 map <C-p> :call PhpDoc()<CR>
+map <F11> :AcpEnable<CR>
+map <F12> :AcpDisable<CR>
