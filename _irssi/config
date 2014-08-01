@@ -186,9 +186,9 @@ statusbar = {
 };
 settings = {
   HEAD = "core";
-  real_name = "Kuan Min Sheng";
-  user_name = "kmsheng_tw";
-  nick = "kmsheng";
+  real_name = "Nobita Wang";
+  user_name = "nobita_tw";
+  nick = "nobita";
   core = { real_name = "root"; user_name = "root"; nick = "root"; };
   "fe-text" = { actlist_sort = "refnum"; };
 };
