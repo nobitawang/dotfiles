@@ -27,5 +27,5 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 
-alias pjson='/net/account/pixuser/kmsheng/github/pjson/pjson'
+alias pjson='/net/account/pixuser/nobita/github/pjson/pjson'
 alias composer=""
