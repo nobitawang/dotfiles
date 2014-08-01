@@ -31,8 +31,8 @@ esac
 
 
 export EDITOR="vim"
-export DEBFULLNAME="kmsheng"
-export DEBEMAIL="kmsh3ng@gmail.com"
+export DEBFULLNAME="nobita"
+export DEBEMAIL="unvisityboss@gmail.com"
 export APPENGINE_HOME="$DEV_HOME/google_appengine"
 export PLAY_HOME="$DEV_HOME/play"
 export MAVEN_HOME="$DEV_HOME/apache-maven"
